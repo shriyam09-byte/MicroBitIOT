@@ -129,7 +129,7 @@ class cloud {
         // Once fade completes, set actual state
         if (this.cloudOpacity === 0 && this.targetState === "clear") {
             this.weatherState = "clear";
-        } else if (this.cloudOpacity === 1) {
+        } else if (this.cloudOpacity === 0.4) {
             this.weatherState = this.targetState;
         }
     }
