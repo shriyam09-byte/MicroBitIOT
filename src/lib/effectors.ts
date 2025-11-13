@@ -80,13 +80,13 @@ class effectors {
                 p5.translate(0, 64, 0);
                 p5.stroke(255, 255, 180, 90);
                 p5.strokeWeight(2.5);
-                const rayCount = 32;
-                const rayLength = 360;
-                for (let i=0; i < rayCount; i++) {
-                    const angle = (2 * Math.PI * i)/rayCount;
-                    const x = Math.PI * i)/rayCount;
+                const rayCountX = 32;
+                const rayLengthX = 360;
+                for (let i=0; i < rayCountX; i++) {
+                    const angle = (2 * Math.PI * i)/rayCountX;
+                    const x = (Math.PI * i)/rayCount;
                     const z = Math.sin(angle) * 80;
-                    p5.line(0, 0, 0, x, rayLength, z);
+                    p5.line(0, 0, 0, x, rayLengthX, z);
                 }
                 p5.pop();
                 p5.pop();
