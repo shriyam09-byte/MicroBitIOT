@@ -290,5 +290,5 @@ class effectors {
         this.soilm = !!simState.effectors[2];
     }
 }
-
+}
 export { effectors };
